@@ -1,0 +1,19 @@
+// novidade! Ativa a transição no elemento.
+//Agora, quando o transform for aplicado apenas para os elementos que estão saindo da lista, a escala será animada!
+
+
+.painel-animado {
+    -moz-transition:transform 0.8s;
+    -webkit-transition:transform 0.8;
+    -ms-transition:transform 0.8;
+    -o-transition:transform 0.8;
+    transition:transform 0.8;
+}
+
+.painel-animado .ng-leave-active {
+  -moz-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -o-transform: scale(0.1);
+  transform: scale(0.1);
+}
